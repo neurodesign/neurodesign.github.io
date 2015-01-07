@@ -1,0 +1,24 @@
+---
+layout: default 
+---
+<section id="container" class="post">
+  <article id="post" class="post">
+    <a href="/" class="home-link"></a>
+    <time class="post" datetime="{{ page.date }}">
+      {{ page.date | date: "%-d %b %Y" }}
+    </time>
+    <h1 class="article-title">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+    {{ content }}
+  </article>
+</section>
+<div id="disqus_thread" class="comments"></div>
+<script>
+  var disqus_shortname = 'neurodesign';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    document.getElementById('post').appendChild(dsq);
+  })();
+</script>

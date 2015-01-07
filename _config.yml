@@ -1,0 +1,14 @@
+exclude: [README.md]
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "articles"
+      type: "posts"
+    values:
+      layout: "post"
+
