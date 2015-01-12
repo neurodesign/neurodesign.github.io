@@ -4,11 +4,16 @@ layout: default
 ---
 
 <section id="container">
+  <h1>neurodesign</h1>
   <ul class="posts">
   {% for post in site.posts %}
     <li class="post">
-      <span>{{ post.date | date_to_string }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">
+        <span class="date">{{ post.date | date_to_string }}</span>
+        {{ post.title }}
+        <span class="arrow">›</span>
+      </a>
+
     </li>
     {% endfor %}
   </ul>

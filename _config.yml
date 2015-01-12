@@ -1,4 +1,4 @@
-exclude: [README.md, Vagrantfile, provision, .gitignore, .vagrant]
+exclude: [README.md, Vagrantfile, .gitignore, .vagrant]
 
 collections:
   posts:
