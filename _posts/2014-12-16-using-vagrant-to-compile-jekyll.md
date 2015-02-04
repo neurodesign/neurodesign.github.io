@@ -13,6 +13,11 @@ Setting up jekyll is pretty straight-forward, and just a gem away (you also need
 
     gem install jekyll
 
+You'll also need a javascript runtime. So we'll install nodejs.
+
+
+    apt-get -y install nodejs
+
 Launching it if simple as well, and you a quick search in the help show you can watch for new files and force polling to allow edition from outside the vm:
 
 
@@ -30,7 +35,7 @@ Here is the full Vagrantfile:
       config.vm.network "forwarded_port", guest: 4000, host: 4000
       config.vm.provision :shell,
         :privileged => true,
-        :inline => "apt-get -y install ruby1.9.3 && gem install github-pages --no-ri --no-rdoc"
+        :inline => "apt-get -y install ruby1.9.3 nodejs && gem install github-pages --no-ri --no-rdoc"
       config.vm.provision :shell,
         :run => "always",
         :privileged => false,
