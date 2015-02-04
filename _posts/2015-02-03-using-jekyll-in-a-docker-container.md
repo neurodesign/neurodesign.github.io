@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using jekyll in a docker container
 tags:
   - jekyll

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using vagrant to compile jekyll
 tags:
   - vagrant

@@ -8,7 +8,9 @@
 </head>
 <body>
   {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
+  <section id="container" class="{{ page.class}}">
+    <a href="/" class="home-link"></a>
+    {{ content }}
+  </section>
 </body>
 </html>

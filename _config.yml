@@ -1,14 +1,23 @@
 exclude: [README.md, Vagrantfile, .gitignore, .vagrant]
 
+permalink: /blog/:title/
+
 collections:
-  posts:
+  pages:
     output: true
+    permalink: /:title/
+    layout: "default"
 
 defaults:
   -
     scope:
-      path: "articles"
+      path: ""
       type: "posts"
     values:
       layout: "post"
-
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
