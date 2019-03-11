@@ -1,12 +1,12 @@
 ---
-title: Testing a rest api using behat
+title: Testing a rest api using cucumber
 tags:
   - behat
   - rest
   - test
 ---
 
-I've recently been involved in a heatful debate regarding the use of behat (cucumber) for testing rest apis. While testing features should generally avoid implementation specifics, this "good pratice" can be misunderstood and taken to far in the context of apis. I first try to show the issue with this heuristic, demonstrating that there is no way to reliably test an api without a strong focus on the implementation, and then propose to focus on what matters: the user, to build really valuable tests.
+I've recently been involved in a heatful debate regarding the use of cucumber for testing rest apis. While testing features should generally avoid implementation specifics, this "good pratice" can be misunderstood and taken to far in the context of apis. I first try to show the issue with this heuristic, demonstrating that there is no way to reliably test an api without a strong focus on the implementation, and then propose to focus on what matters: the user, to build really valuable tests.
 
 
 ## Good pratices and implementation details
